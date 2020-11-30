@@ -132,6 +132,56 @@ nav {
   list-style-type: none;
 }
 
+.galpic {
+  width: 100%;
+  margin-top: 0em;
+}
+
+footer {
+  background-color: white;
+  overflow: hidden;
+}
+
+footer h2 {
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  margin: 0;
+  color: black;
+  padding-top: .75em;
+}
+
+footer .links {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+footer img {
+  width: 33.3333%;
+}
+
+footer a {
+  text-align: center;
+  display: flex;
+  color: #99cccc;
+  font-size: 1em;
+  padding: .5em;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #65a3a3;
+}
+
+footer p {
+  font-size: 1em;
+  text-align: center;
+  color: black;
+  padding-top: 1em;
+}
+
+
 @media only screen and (min-width: 25em) {
 
 
