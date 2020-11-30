@@ -11,18 +11,27 @@
 </head>
 <body>
 
-  <header class="masthead">
+  <ul class="skip-links">
+    <li><a href="#nav">skip to navigation</a></li>
+    <li><a href="#banner">skip to banner</a></li>
+    <li><a href="#main">skip to main content</a></li>
+    <li><a href="#complementary">skip to contact</a></li>
+  </ul>
+
+  <header class="head masthead" role="banner" id="banner">
     <div class="logo-div grid-middle">
       <img class="logo" src="logo/tay-logo.svg" alt="">
     </div>
-    <nav>
+
+    <nav class="nav" role="navigation" id="nav">
       <ul class="nav list-group-inline">
         <li><a href="#home">home</a></li>
         <li><a href="#about-us">about us</a></li>
         <li><a href="#services">services</a></li>
       </ul>
     </nav>
-      <div class="banner">
+
+      <div class="banner" role="banner" id="banner">
         <div class="">
           <h1 class="bantext text-right">Lust for Lashes</h1>
           <img class="banner" src="images/tayclient-banner-thin.jpg" alt="">
@@ -30,7 +39,7 @@
       </div>
   </header>
 
-  <main>
+  <main role="main" id="main">
     <section class="artist grid">
     <div class="unit m-1-2">
       <img class="tay-pic" src="images/tay.jpg" alt="">
@@ -107,7 +116,7 @@
     </section>
 
   </main>
-  <footer>
+  <footer role="contentinfo" id="contentinfo">
       <div class="top">
         <h2>Taylor Gariepy Lashes©</h2>
         <p>Visit our social media <b>@Lashedbytayylor</b></p>
