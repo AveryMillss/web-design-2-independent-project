@@ -13,7 +13,7 @@ html {
   font: normal 100%/1.3 serif;
   margin: 0;
   padding: 0;
-  font-family: 'Prata', serif;
+  font-family: 'Castoro', serif;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -36,14 +36,23 @@ main {
   color: #fff;
 }
 
+h2 {
+  font-family: 'Castoro', serif;
+  font-weight: 100;
+}
+
 .logo {
-  width: 120px;
-  max-width: 100%;
+  display: block;
+  width: 30%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 header {
   align-items: center;
-  width: 100%;
   padding: 0;
 }
 
@@ -70,21 +79,27 @@ nav {
   position: relative;
 }
 
-.banner {
+.bannermob {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: 100% 0;
+
+  width: 300px;
+  height: 210px;
+}
+
+.bannerfull {
+  display: none;
   width: 100%;
   display: block;
-  padding: 0;
-  position: absolute;
+
 }
 
 .bantext {
-  position: absolute;
-  z-index: 1;
-  color: black;
-  padding-right: 1rem;
-  top: 50%;
-  left: 70%;
-  transform: translate(-20%, 50%);
+  color: #99cccc;
+  text-align: center;
+  padding-top: 1.25em;
 }
 
 .artist {
@@ -93,28 +108,28 @@ nav {
   background-color: #EBC897;
   border-radius: 2em;
 }
-.tay-text {
-  padding: .75rem 1rem 1rem 1rem;
+
+.tay-text{
+  padding: 0em 1em 1em 1em;
 }
 
 .tay-pic {
   width: 100%;
-  margin-top: 0em;
-}
-
-.artist {
-  margin-top: 15em;
+  margin: 0em;
+  padding: 0;
 }
 
 .h2 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .tay-btn {
   border: solid 2px #000;
   background-color: #fff;
   padding: .5rem;
+  margin: 3em;
 }
 
 .tay-btn:hover {
@@ -125,6 +140,11 @@ nav {
 .safety {
   padding-top: 2em;
   display: grid;
+}
+
+.h2 {
+  text-align: center;
+  margin-top: 1em;
 }
 
 .safety p {
@@ -138,14 +158,36 @@ nav {
   position: relative;
 }
 
+.gallery h2 {
+  text-align: center;
+}
+
+.gallery h3 {
+  text-align: center;
+}
+
 .gal {
   text-decoration: none;
   list-style-type: none;
+  padding-top: 2em;
 }
 
 .galpic {
   width: 100%;
   margin-top: 0em;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form h3{
+  text-align: center;
 }
 
 footer {
@@ -195,14 +237,6 @@ footer p {
 
 @media only screen and (min-width: 25em) {
 
-
-  .logo {
-    width: 120px;
-    max-width: 100%;
-    position: absolute;
-    z-index: 1;
-  }
-
   header {
     align-items: center;
     width: 100%;
@@ -225,39 +259,99 @@ footer p {
     display: flex;
     text-align: center;
     flex-direction: row;
-    position: absolute;
     justify-content: space-around;
   }
 
   nav {
+    position: relative;
+  }
+
+  .bannermob {
+    display: none;
+    width: 100%;
     position: absolute;
-    z-index: 1;
   }
 
   .banner {
+    z-index: 1;
     width: 100%;
+    display: block;
     padding: 0;
     position: absolute;
-    z-index: 0;
   }
 
   .bantext {
     position: absolute;
-    font-size: 3em;
     z-index: 1;
     color: black;
     padding-right: 1rem;
     top: 50%;
     left: 70%;
-    transform: translate(-20%, 60%);
+    transform: translate(-20%, -20%);
   }
+
   .artist {
-    display: flex;
-    margin-top: 25em;
+    margin-top: 15em;
+  }
+
+  h3 {
+  text-align: center;
   }
 
   .safety {
     display: grid;
   }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-Between;
+  }
+
+  img .bannermob {
+    z-index: 2;
+  }
+
+  img .bannerfull {
+    z-index: 0;
+    padding-top: 0;
+  }
+
+  .masthead {
+    background: rgba(0,0,0,0);
+  }
+
+  .logo {
+    width: 100px;
+    object-fit: fill;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-Between;
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  ul a{
+    padding-right: 5em
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+}
+
+@media only screen and (min-width: 90em) {
 
 }
