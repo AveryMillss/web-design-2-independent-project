@@ -44,6 +44,7 @@ h2 {
 .logo {
   display: block;
   width: 30%;
+  margin: auto auto;
 }
 
 ul {
@@ -81,12 +82,21 @@ nav {
   position: relative;
 }
 
-.bannermob {
-  object-fit: cover;
-  object-position: 100% 0;
+.banner {
+  z-index: 1;
+  width: 100%;
+  display: block;
+  padding: 0;
+  position: relative;
+}
 
-  width: 300px;
-  height: 210px;
+.bantext {
+  position: absolute;
+  z-index: 1;
+  padding-right: 1.5rem;
+  top: 20%;
+  left: 70%;
+  transform: translate(-20%, -20%);
 }
 
 .bannerfull {
@@ -101,23 +111,33 @@ nav {
   padding-bottom: .5em;
 }
 
+.h1 {
+  color: #9cc;
+  font-size: 1.25rem;
+}
+
 .artist {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  background-color: #ebc897;
-  border-radius: 2em;
   text-align: center;
 }
 
 .tay-text {
-  padding: 0em 1em 1em;
   text-align: left;
+  padding: 0em 1em 1em;
 }
 
 .tay-pic {
   width: 100%;
   margin: 0em;
   padding: 0;
+}
+
+.tay-content {
+  background-color: #ebc897;
+  padding-top: .5rem;
+}
+
+.btn-small {
+  font-size: .75rem;
 }
 
 .h2 {
@@ -178,6 +198,9 @@ nav {
 .form {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  grid-row-gap: 1rem;
+  padding: 1rem;
+  background-color: #ebc897;
 }
 
 .form h2 {
@@ -234,9 +257,23 @@ footer p {
   padding-top: 1em;
 }
 
+h2 {
+  text-align: center;
+}
+
 .not {
   text-align: center;
+  margin-top: 2rem;
   padding-bottom: 2rem;
+}
+
+h3 {
+  color: #9cc;
+  text-align: center;
+}
+
+.pic {
+  width: 100%;
 }
 
 @media only screen and (min-width: 25em) {
@@ -245,6 +282,13 @@ footer p {
     align-items: center;
     width: 100%;
     padding: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 20%;
+    margin: auto auto;
+    padding-bottom: .5rem;
   }
 
   a {
@@ -256,7 +300,6 @@ footer p {
 
   nav a:hover {
     font-weight: bold;
-    text-decoration: underline;
   }
 
   nav ul {
@@ -279,11 +322,8 @@ footer p {
     text-align: center;
   }
 
-  .bannermob {
-    display: none;
-    width: 100%;
-    position: absolute;
-    object-fit: fill;
+  .btn-small {
+    font-size: 1rem;
   }
 
   .banner {
@@ -291,7 +331,7 @@ footer p {
     width: 100%;
     display: block;
     padding: 0;
-    position: absolute;
+    position: relative;
   }
 
   .bantext {
@@ -301,12 +341,15 @@ footer p {
     top: 20%;
     left: 70%;
     transform: translate(-20%, -20%);
+  }
+
+  .h1 {
     color: #9cc;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 
   .artist {
-    margin-top: 15em;
+    position: static;
   }
 
   h3 {
@@ -331,6 +374,10 @@ footer p {
     background-color: black;
   }
 
+  h2 {
+    text-align: center;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -345,8 +392,9 @@ footer p {
     color: #9cc;
   }
 
-  img .bannermob {
-    z-index: 2;
+  .h1 {
+    color: #9cc;
+    font-size: 3rem;
   }
 
   img .bannerfull {
@@ -354,14 +402,14 @@ footer p {
     padding-top: 0;
   }
 
-  .masthead {
-    background: rgba(0, 0, 0, 0);
-  }
-
   .logo {
     width: 100px;
     object-fit: fill;
     margin: 0;
+  }
+
+  .tay-text {
+    font-size: 1.125rem;
   }
 
   nav {
@@ -388,6 +436,10 @@ footer p {
   .artist {
     display: flex;
     margin: 0;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   .safety {
@@ -428,12 +480,46 @@ footer p {
     display: grid;
   }
 
+  .art {
+    display: flex;
+  }
+
+  .sets {
+    display: flex;
+    padding-bottom: 2rem;
+  }
+
+  .tay-content {
+    margin: auto;
+
+  }
+
+  .pic {
+    width: 40%;
+  }
+
+  .text {
+    width: 50%;
+    margin: auto;
+  }
+
+  .infomain {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .btn-small {
+    font-size: 1.25rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
-  .bantext {
-    font-size: 5rem;
+  .h1 {
+    color: #9cc;
+    font-size: 6rem;
+    margin-bottom: 0;
   }
 
   main {
@@ -484,6 +570,14 @@ footer p {
     display: grid;
   }
 
+  .pic {
+    width: 30%;
+  }
+
+  .text {
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -497,9 +591,16 @@ footer p {
     width: 50%;
   }
 
+  .pic {
+    margin-right: 8rem;
+  }
+
   .form {
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+  .tay-content {
+    margin-right: 8rem;
   }
 
 }
