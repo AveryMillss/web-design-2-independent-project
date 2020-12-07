@@ -17,68 +17,75 @@
     <li><a href="#complementary">skip to contact</a></li>
   </ul>
 
-  <header class="head masthead" role="banner" id="banner">
-    <a href="index.html">
-      <img class="logo" src="logo/small-logo.svg" alt="">
+  <header class="masthead" role="banner" id="banner">
+    <div class="head">
+      <a href="index.html">
+      <img class="logo" src="logo/small-logo.svg" alt="logo reading taylor gariepy with an eye">
     </a>
 
-    <nav class="nav" role="navigation" id="nav">
-      <ul class="nav">
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="info.html">Information</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav" role="navigation" id="nav">
+        <ul class="nav">
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="info.html">Information</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="banner">
+      <img class="bannerfull" src="images/tayclient-banner-thin.jpg" alt="image of girl with the hybrid eyelash set">
+      <h1 class="bantext">Lust for Lashes</h1>
+    </div>
   </header>
 
-  <div class="banner">
-    <img class="bannerfull" src="images/tayclient-banner-thin.jpg" alt="image of girl with the hybrid eyelash set">
-    <h1 class="bantext">Lust for Lashes</h1>
-  </div>
-
   <main role="main" id="main">
-    <section class="artist">
+    <div class="artist">
       <div>
         <img class="tay-pic" src="images/tay.jpg" alt="image of the artist">
       </div>
       <div class="tay-content">
         <h2 class="h2">Meet the Artist</h2>
         <p class="tay-text">Taylor Gariepy is a 19 year old environmental science student at The University of Ottawa. She has been lashing for 2 years and has expanded her business to reach all corners of the Ottawa area.</p>
-        <a class="btn" href="about-us">More about the Artist</a>
+        <div class="not">
+          <a class="btn" href="info.html">More about the Artist</a>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="safety">
-      <div class="mask-div">
-        <div>
-          <img class="icon" src="images/mask.png" alt="">
+    <section>
+      <div class="safety">
+        <div class="three mask-div">
+          <div>
+            <img class="icon" src="images/mask.png" alt="">
+          </div>
+          <div class="mask-content">
+            <h2 class="h2">Masks</h2>
+            <p>Masks are required at all times.</p>
+          </div>
         </div>
-        <div class="mask-content">
-          <h2 class="h2">Masks</h2>
-          <p>Masks are required at all times.</p>
-        </div>
-      </div>
 
-      <div class="tool-div">
-        <div>
-          <img class="icon" src="images/tools.png" alt="">
+        <div class="three tool-div">
+          <div>
+            <img class="icon" src="images/tools.png" alt="">
+          </div>
+          <div class="tool-content">
+            <h2 class="h2">Tools</h2>
+            <p>Between every client, all tools are sanitized.</p>
+          </div>
         </div>
-        <div class="tool-content">
-          <h2 class="h2">Tools</h2>
-          <p>Between every client, all tools are sanitized.</p>
-        </div>
-      </div>
 
-      <div class="sanitize-div">
-        <div>
-          <img class="icon" src="images/clean.png" alt="">
-        </div>
-        <div class="sanitize-content">
-          <h2 class="h2">Sanitization</h2>
-          <p>Between every client, all high touch areas are sanitized.</p>
+        <div class="three sanitize-div">
+          <div>
+            <img class="icon" src="images/clean.png" alt="">
+          </div>
+          <div class="sanitize-content">
+            <h2 class="h2">Sanitization</h2>
+            <p>Between every client, all high touch areas are sanitized.</p>
+          </div>
         </div>
       </div>
-      <a class="btn" href="Safety">More about Safety</a>
+      <div class="not">
+        <a class="btn" href="info.html">More about Safety</a>
+      </div>
     </section>
 
     <section class="gallery">
@@ -109,36 +116,42 @@
           <p>Volume</p>
         </li>
       </ul>
-      <a class="btn" href="Safety">More about Services</a>
+      <div class="not">
+        <a class="btn" href="info.html">More about Services</a>
+      </div>
     </section>
 
-    <div class="form" role="complementary">
+    <div role="complementary">
       <h2>Contact Me</h2>
-      <div class="name unit">
-        <label for="name">Full name</label>
-        <input id="name" name="name" required>
-      </div>
+      <div class="form">
+        <div class="name unit">
+          <label for="name">Full name</label>
+          <input id="name" name="name" required>
+        </div>
 
-      <div class="number unit">
-        <label for="number">Phone Number</label>
-        <input id="number" name="number" required>
-      </div>
+        <div class="number unit">
+          <label for="number">Phone Number</label>
+          <input id="number" name="number" required>
+        </div>
 
-      <div class="set unit">
-        <label for="set">Which set</label>
-        <select id="set" name="set">
-          <option value="set">Select a set</option>
-          <option>Classic</option>
-          <option>Hybrid</option>
-          <option>Volume</option>
-        </select>
-      </div>
+        <div class="set unit">
+          <label for="set">Which set</label>
+          <select id="set" name="set">
+            <option value="set">Select a set</option>
+            <option>Classic</option>
+            <option>Hybrid</option>
+            <option>Volume</option>
+          </select>
+        </div>
 
-      <div class="box unit">
-        <label for="message">Please leave any comments or questions you may have. <em>(optional)</em></label>
-        <textarea id="message" name="message" required></textarea>
+        <div class="box unit">
+          <label for="message">Please leave any comments or questions. <em>(optional)</em></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
       </div>
-      <a class="btn" href="Submit">Submit</a>
+      <div class="not">
+        <a class="btn" href="Submit">Submit</a>
+      </div>
     </div>
   </main>
 

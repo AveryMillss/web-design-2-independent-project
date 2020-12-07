@@ -13,8 +13,8 @@ html {
   font: normal 100%/1.3 serif;
   margin: 0;
   padding: 0;
-  font-family: 'Castoro', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: Castoro, serif;
+  font-family: Roboto, sans-serif;
 }
 
 .skip-links {
@@ -37,7 +37,7 @@ main {
 }
 
 h2 {
-  font-family: 'Castoro', serif;
+  font-family: Castoro, serif;
   font-weight: 100;
 }
 
@@ -60,14 +60,14 @@ a {
   list-style-type: none;
   text-decoration: none;
   color: #000;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 nav a:hover {
   font-weight: bold;
   color: white;
   background-color: black;
-  padding: .5em;
+  margin: .5em;
 }
 
 nav ul {
@@ -92,7 +92,7 @@ nav {
 .bannerfull {
   width: 100%;
   display: block;
-  padding-top: 0.5em;
+  padding-top: .5em;
 }
 
 .bantext {
@@ -106,10 +106,12 @@ nav {
   grid-template-rows: 1fr 1fr;
   background-color: #ebc897;
   border-radius: 2em;
+  text-align: center;
 }
 
-.tay-text{
+.tay-text {
   padding: 0em 1em 1em;
+  text-align: left;
 }
 
 .tay-pic {
@@ -120,15 +122,16 @@ nav {
 
 .h2 {
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   text-align: center;
 }
+
 .btn {
   border: solid 2px #000;
   background-color: #fff;
   padding: .5rem;
-  margin: 3em;
   text-align: center;
+  transform: translateY(-50%);
 }
 
 .btn:hover {
@@ -157,7 +160,7 @@ nav {
   text-align: center;
 }
 
-.gallery h3 {
+.gallery {
   text-align: center;
 }
 
@@ -174,14 +177,14 @@ nav {
 
 .form {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .form h2 {
   text-align: center;
 }
 
-.form h3{
+.form h3 {
   text-align: center;
 }
 
@@ -191,7 +194,7 @@ footer {
 }
 
 footer h2 {
-  font-size: 2em;
+  font-size: 2rem;
   display: block;
   text-align: center;
   margin: 0;
@@ -212,27 +215,33 @@ footer img {
 footer a {
   text-align: center;
   display: flex;
-  color: #9cc;
-  font-size: 1em;
+  color: black;
+  font-size: 1rem;
   padding: .5em;
   text-decoration: underline;
 }
 
 footer a:hover {
-  color: #65a3a3;
+  color: white;
+  background-color: black;
+  padding: .5em;
 }
 
 footer p {
-  font-size: 1em;
+  font-size: 1rem;
   text-align: center;
   color: black;
   padding-top: 1em;
 }
 
+.not {
+  text-align: center;
+  padding-bottom: 2rem;
+}
 
 @media only screen and (min-width: 25em) {
 
-  header {
+  .head {
     align-items: center;
     width: 100%;
     padding: 0;
@@ -242,7 +251,7 @@ footer p {
     list-style-type: none;
     text-decoration: none;
     color: #000;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   nav a:hover {
@@ -259,6 +268,15 @@ footer p {
 
   nav {
     position: relative;
+  }
+
+  a .btn {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .btn {
+    text-align: center;
   }
 
   .bannermob {
@@ -279,11 +297,12 @@ footer p {
   .bantext {
     position: absolute;
     z-index: 1;
-    color: black;
     padding-right: 1rem;
-    top: 50%;
+    top: 20%;
     left: 70%;
     transform: translate(-20%, -20%);
+    color: #9cc;
+    font-size: 2.5rem;
   }
 
   .artist {
@@ -291,21 +310,39 @@ footer p {
   }
 
   h3 {
-  text-align: center;
+    text-align: center;
   }
 
   .safety {
     display: grid;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
+  .not {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  li a:hover {
+    color: white;
+    background-color: black;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
 
-  header {
+  .head {
     display: flex;
     flex-direction: row;
-    justify-content: space-Between;
+    justify-content: space-between;
+  }
+
+  .bantext {
+    color: #9cc;
   }
 
   img .bannermob {
@@ -331,27 +368,138 @@ footer p {
     display: flex;
     text-align: center;
     flex-direction: row;
-    justify-content: space-Between;
+    justify-content: space-between;
+  }
+
+  li a:hover {
+    color: white;
+    background-color: black;
+    margin-right: 5em;
   }
 
   .banner {
     position: relative;
   }
 
-  ul a{
-    padding-right: 5em
+  ul a {
+    margin-right: 5em;
   }
 
   .artist {
+    display: flex;
+    margin: 0;
+  }
 
+  .safety {
+    display: grid;
+    grid-template-areas: ".mask-div .tool-div .sanitize-div";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .not {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .gall {
+    display: grid;
+    grid-template-areas: ".galpic .galpic";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gal {
+    padding: 0;
+  }
+
+  .galpic {
+    display: grid;
+  }
+
+  .form {
+    align-items: center;
+    display: grid;
+    grid-template-areas: "unit unit";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .unit {
+    display: grid;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  .bantext {
+    font-size: 5rem;
+  }
+
+  main {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
+  .artist {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .tay-pic {
+    width: 80%;
+  }
+
+  .tay-content {
+    align-items: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .gall {
+    display: grid;
+    grid-template-areas: ".galpic .galpic .galpic";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .gal {
+    padding: 0;
+  }
+
+  .galpic {
+    display: grid;
+  }
+
+  .form {
+    display: grid;
+    grid-template-areas: "unit unit";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .unit {
+    display: grid;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  main {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .tay-pic {
+    width: 50%;
+  }
+
+  .form {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
 
 }
