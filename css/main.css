@@ -259,6 +259,7 @@ footer p {
 
 h2 {
   text-align: center;
+  margin-top: 2rem;
 }
 
 .not {
@@ -274,6 +275,11 @@ h3 {
 
 .pic {
   width: 100%;
+}
+
+.infopic {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -512,6 +518,13 @@ h3 {
     font-size: 1.25rem;
   }
 
+  .upkeep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div .infopic";
+    align-items: center;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -591,6 +604,10 @@ h3 {
     width: 50%;
   }
 
+  .only {
+    margin-left: 5rem;
+  }
+
   .pic {
     margin-right: 8rem;
   }
@@ -601,6 +618,19 @@ h3 {
   }
   .tay-content {
     margin-right: 8rem;
+  }
+
+  .upkeep {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "div .infopic";
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+
+  .infopic {
+    width: 50%;
+    margin-left: 8rem;
   }
 
 }
