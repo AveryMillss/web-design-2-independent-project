@@ -39,12 +39,14 @@ main {
 h2 {
   font-family: Castoro, serif;
   font-weight: 100;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .logo {
   display: block;
   width: 30%;
-  margin: auto auto;
+  margin: auto;
 }
 
 ul {
@@ -94,6 +96,9 @@ nav {
   position: absolute;
   z-index: 1;
   padding-right: 1.5rem;
+  color: #9cc;
+  text-align: center;
+  padding-bottom: .5em;
   top: 20%;
   left: 70%;
   transform: translate(-20%, -20%);
@@ -103,12 +108,6 @@ nav {
   width: 100%;
   display: block;
   padding-top: .5em;
-}
-
-.bantext {
-  color: #9cc;
-  text-align: center;
-  padding-bottom: .5em;
 }
 
 .h1 {
@@ -127,7 +126,6 @@ nav {
 
 .tay-pic {
   width: 100%;
-  margin: 0em;
   padding: 0;
 }
 
@@ -257,11 +255,6 @@ footer p {
   padding-top: 1em;
 }
 
-h2 {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 .not {
   text-align: center;
   margin-top: 2rem;
@@ -293,7 +286,7 @@ h3 {
   .logo {
     display: block;
     width: 20%;
-    margin: auto auto;
+    margin: auto;
     padding-bottom: .5rem;
   }
 
@@ -497,7 +490,6 @@ h3 {
 
   .tay-content {
     margin: auto;
-
   }
 
   .pic {
@@ -616,6 +608,7 @@ h3 {
     margin-left: 10rem;
     margin-right: 10rem;
   }
+
   .tay-content {
     margin-right: 8rem;
   }
