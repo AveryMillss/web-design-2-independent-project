@@ -121,7 +121,6 @@ nav {
 
 .tay-text {
   text-align: left;
-  padding: 0em 1em 1em;
 }
 
 .tay-pic {
@@ -131,7 +130,7 @@ nav {
 
 .tay-content {
   background-color: #ebc897;
-  padding-top: .5rem;
+  padding: .5em 1em 1em;
 }
 
 .btn-small {
@@ -190,7 +189,6 @@ nav {
 
 .galpic {
   width: 100%;
-  margin-top: 0em;
 }
 
 .form {
